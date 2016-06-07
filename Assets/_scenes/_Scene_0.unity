@@ -83,6 +83,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 59438085}
+  - 114: {fileID: 59438086}
   m_Layer: 0
   m_Name: AppleTree
   m_TagString: Untagged
@@ -97,13 +98,30 @@ Transform:
   m_PrefabInternal: {fileID: 1189828952}
   m_GameObject: {fileID: 59438084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: 12, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1039384339}
   - {fileID: 1855425703}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &59438086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad,
+    type: 2}
+  m_PrefabInternal: {fileID: 1189828952}
+  m_GameObject: {fileID: 59438084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb061946f808ed43acbee82882ecf39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 0}
+  speed: 5
+  leftAndRightEdge: 20
+  chanceToChangeDirections: .0199999996
+  secondsBetweenAppleDrops: 1
 --- !u!1 &523721908
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +336,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1067226010}
-  m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381676, w: .875426054}
+  m_LocalRotation: {x: .408217967, y: -.234569743, z: .109381683, w: .875426114}
   m_LocalPosition: {x: 0, y: 10, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -337,7 +355,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447856, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 447856, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: m_LocalPosition.z
@@ -362,6 +380,18 @@ Prefab:
     - target: {fileID: 447856, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
+      propertyPath: leftAndRightEdge
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
+      propertyPath: chanceToChangeDirections
+      value: .0199999996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
