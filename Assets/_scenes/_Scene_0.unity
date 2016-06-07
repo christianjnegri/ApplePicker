@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 59438085}
   - 114: {fileID: 59438086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AppleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdb061946f808ed43acbee82882ecf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
+  applePrefab: {fileID: 127358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
   speed: 5
   leftAndRightEdge: 20
   chanceToChangeDirections: .0199999996
@@ -134,6 +134,7 @@ GameObject:
   - 92: {fileID: 523721911}
   - 124: {fileID: 523721910}
   - 81: {fileID: 523721909}
+  - 114: {fileID: 523721914}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -206,6 +207,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &523721914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 523721908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9548effe29b256d45a7c8344ca45a645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 192158, guid: de728fd4f99f94c76a8a65699f3ca6fe, type: 2}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
 --- !u!1 &1039384335
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +233,7 @@ GameObject:
   - 33: {fileID: 1039384338}
   - 136: {fileID: 1039384337}
   - 23: {fileID: 1039384336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,6 +409,10 @@ Prefab:
       propertyPath: chanceToChangeDirections
       value: .0199999996
       objectReference: {fileID: 0}
+    - target: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 127358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
   m_RootGameObject: {fileID: 59438084}
@@ -409,7 +429,7 @@ GameObject:
   - 33: {fileID: 1855425706}
   - 135: {fileID: 1855425705}
   - 23: {fileID: 1855425704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}

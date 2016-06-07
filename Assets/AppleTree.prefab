@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3347854}
   - 136: {fileID: 13647856}
   - 23: {fileID: 2347854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3347856}
   - 135: {fileID: 13547856}
   - 23: {fileID: 2347856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 447856}
   - 114: {fileID: 11470718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AppleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
