@@ -118,10 +118,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   applePrefab: {fileID: 127358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
-  speed: 5
+  speed: 40
   leftAndRightEdge: 20
-  chanceToChangeDirections: .0199999996
-  secondsBetweenAppleDrops: 1
+  chanceToChangeDirections: .0399999991
+  secondsBetweenAppleDrops: .699999988
 --- !u!1 &523721908
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,59 +220,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   basketPrefab: {fileID: 192158, guid: de728fd4f99f94c76a8a65699f3ca6fe, type: 2}
   numBaskets: 3
-  basketBottomY: -14
+  basketBottomY: 5
   basketSpacingY: 2
---- !u!1 &581716684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 581716686}
-  - 132: {fileID: 581716685}
-  m_Layer: 0
-  m_Name: ScoreCounter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!132 &581716685
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 581716684}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 1000
-  m_Anchor: 2
-  m_Alignment: 2
-  m_PixelOffset: {x: -10, y: -6}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 0}
-  m_Material: {fileID: 0}
-  m_FontSize: 24
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_PixelCorrect: 1
-  m_RichText: 1
---- !u!4 &581716686
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 581716684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
 --- !u!1 &1039384335
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,16 +403,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: speed
-      value: 5
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: chanceToChangeDirections
-      value: .0199999996
+      value: .0399999991
       objectReference: {fileID: 0}
     - target: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: applePrefab
       value: 
       objectReference: {fileID: 127358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
+    - target: {fileID: 11470718, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
+      propertyPath: secondsBetweenAppleDrops
+      value: .699999988
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
   m_RootGameObject: {fileID: 59438084}
@@ -541,54 +494,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1189828952}
   m_GameObject: {fileID: 1855425702}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1974911669
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1974911671}
-  - 132: {fileID: 1974911670}
-  m_Layer: 0
-  m_Name: HighScore
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!132 &1974911670
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1974911669}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 'High Score: 1000'
-  m_Anchor: 0
-  m_Alignment: 0
-  m_PixelOffset: {x: 10, y: -6}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 0}
-  m_Material: {fileID: 0}
-  m_FontSize: 24
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_PixelCorrect: 1
-  m_RichText: 1
---- !u!4 &1974911671
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1974911669}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
